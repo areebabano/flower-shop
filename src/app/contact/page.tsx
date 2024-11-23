@@ -86,195 +86,196 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen py-20 px-8 font-serif pt-40">
+    <div className="contact-container">
+    {/* Contact Header Section with images */}
+    <section className="contact-header">
+      <div className="header-content">
+        <div className="image-section">
+          <div className="header-image">
+            <Image
+              src="/flower1.jpg"
+              alt="Flower Left"
+              height={200}
+              width={200}
+              layout="intrinsic"
+            />
+          </div>
+          <div className="text-center">
+            <h1>
+              <span className="highlight">&#9733;</span> Get In Touch
+            </h1>
+            <p>We would love to hear from you! For any inquiries, collaborations, or feedback, feel free to reach out.</p>
+          </div>
+          <div className="header-image">
+            <Image
+              src="/flower1.jpg"
+              alt="Flower Right"
+              height={210}
+              width={210}
+              layout="intrinsic"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-      {/* Contact Header Section with images */}
-      <section className="text-center mb-12 relative">
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
-          <Image
-            src="/flower1.jpg"
-            alt="Flower Left"
-            height={200}
-            width={200}
-            layout="intrinsic"
-          />
-        </div>
-        <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
-          <Image
-            src="/flower1.jpg"
-            alt="Flower Right"
-            height={210}
-            width={210}
-            layout="intrinsic"
-          />
-        </div>
-        <h1 className="text-4xl font-bold font-serif text-black mb-6">
-          <span className="text-pink-700 mr-2">&#9733;</span> Get In Touch
-        </h1>
-        {/* <h1 className="text-4xl font-bold font-serif text-black mb-6">
-          Get In Touch
-        </h1> */}
-        <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-          We would love to hear from you! For any inquiries, collaborations, or feedback, feel free to reach out.
-        </p>
-      </section>
+    <section className="contact-info-container">
+  <div className="contact-info-content">
+    <div className="contact-info-image">
+      <Image
+        src="/C1.jpg"
+        alt="Flower Left"
+        height={220}
+        width={220}
+      />
+    </div>
 
-      {/* Contact Info - Centered with images */}
-      <section className="max-w-4xl mx-auto p-12 mb-16 text-center relative">
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
-          <Image
-            src="/c1.jpg"
-            alt="Flower Left"
-            height={220}
-            width={220}
-            layout="intrinsic"  // Added layout="intrinsic"
-          />
+    <div className="contact-info-text">
+      <h3 className="contact-info-title">
+        <MdPhone className="inline-block mr-2 text-pink-700" /> Contact Information
+      </h3>
+      <p className="contact-info-paragraph">Reach out to us through any of these channels:</p>
+      <div className="contact-info-details">
+        <div className="contact-info-item">
+          <MdEmail size={26} className="text-yellow-600" />
+          <a href="mailto:contact@floralelegance.com" className="contact-info-link">contact@floralelegance.com</a>
         </div>
-        <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
-          <Image
-            src="/c1.jpg"
-            alt="Flower Right"
-            height={220}
-            width={220}
-            layout="intrinsic"  // Added layout="intrinsic"
-          />
+        <div className="contact-info-item">
+          <MdPhone size={26} className="text-gray-600" />
+          <a href="tel:+123456789" className="contact-info-link">+1 234 567 89</a>
         </div>
-        <h3 className="text-3xl font-semibold text-black mb-6">
-          <MdPhone className="inline-block mr-2 text-pink-700" /> Contact Information
-        </h3>
-        <p className="text-lg text-gray-600 mb-6">Reach out to us through any of these channels:</p>
-        <div className="space-y-6">
-          <div className="flex justify-center items-center space-x-4">
-            <MdEmail size={26} className="text-yellow-600" />
-            <a href="mailto:contact@floralelegance.com" className="text-lg text-black hover:text-rose-700 transition duration-300">contact@floralelegance.com</a>
-          </div>
-          <div className="flex justify-center items-center space-x-4">
-            <MdPhone size={26} className="text-gray-600" />
-            <a href="tel:+123456789" className="text-lg text-black hover:text-rose-700 transition duration-300">+1 234 567 89</a>
-          </div>
-          <div className="flex justify-center items-center space-x-4">
-            <HiLocationMarker size={26} className="text-green-600" />
-            <span className="text-lg text-gray-600">123 Blossom St, Floral City</span>
-          </div>
+        <div className="contact-info-item">
+          <HiLocationMarker size={26} className="text-green-600" />
+          <span className="contact-info-link">123 Blossom St, Floral City</span>
         </div>
-      </section>
+      </div>
+    </div>
+
+    <div className="contact-info-image">
+      <Image
+        src="/C1.jpg"
+        alt="Flower Right"
+        height={220}
+        width={220}
+      />
+    </div>
+  </div>
+</section>
 
 {/* Follow Us - Centered with images */}
-<section className="text-center mb-16 relative">
-  <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
-    <Image
-      src="/c6.jpg"
-      alt="Flower Left"
-      height={220}
-      width={220}
-      layout="intrinsic"  // Added layout="intrinsic"
-    />
-  </div>
-  <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
-    <Image
-      src="/c6.jpg"
-      alt="Flower Right"
-      height={220}
-      width={220}
-      layout="intrinsic"  // Added layout="intrinsic"
-    />
-  </div>
+<section className="contact-info-container">
+  <div className="contact-info-content">
+    <div className="contact-info-image">
+      <Image
+        src="/c6.jpg"
+        alt="Flower Left"
+        height={220}
+        width={220}
+      />
+    </div>
 
-  {/* Heading with Share Icon */}
-  <h3 className="text-3xl font-semibold text-black mb-4 flex items-center justify-center">
-    <FaShareAlt className="text-pink-700 mr-2" /> Connect With Us
-  </h3>
+    <div className="contact-info-text">
+      <h3 className="contact-info-title">
+        <FaShareAlt className="inline-block mr-2 text-pink-700" /> Connect With Us
+      </h3>
+      <p className="contact-info-paragraph">
+        Join us on our social media channels to stay updated with the latest news, offers, and inspirations from Floral Elegance. We’re excited to connect and share with you!
+      </p>
+      <div className="contact-info-social">
+        <a href="https://www.facebook.com/floralelegance" target="_blank" className="contact-info-link">
+          <FaFacebook size={36} className="text-blue-600" />
+        </a>
+        <a href="https://www.instagram.com/floralelegance" target="_blank" className="contact-info-link">
+          <FaInstagram size={36} className="text-pink-500" />
+        </a>
+        <a href="https://www.twitter.com/floralelegance" target="_blank" className="contact-info-link">
+          <FaTwitter size={36} className="text-blue-200" />
+        </a>
+        <a href="https://www.pinterest.com/floralelegance" target="_blank" className="contact-info-link">
+          <FaPinterest size={36} className="text-red-500" />
+        </a>
+      </div>
+    </div>
 
-  {/* Small Paragraph */}
-  <p className="text-lg text-gray-600 mb-6 max-w-lg mx-auto">
-    Join us on our social media channels to stay updated with the latest news, offers, and inspirations from Floral Elegance. We’re excited to connect and share with you!
-  </p>
-
-  {/* Social Media Icons */}
-  <div className="flex justify-center space-x-8">
-    <a href="https://www.facebook.com/floralelegance" target="_blank" className="text-rose-600 hover:text-rose-700 transition duration-300">
-      <FaFacebook size={36} className="text-blue-600 hover:text-blue-700" />
-    </a>
-    <a href="https://www.instagram.com/floralelegance" target="_blank" className="text-rose-600 hover:text-rose-700 transition duration-300">
-      <FaInstagram size={36} className="text-pink-500 hover:text-pink-600" />
-    </a>
-    <a href="https://www.twitter.com/floralelegance" target="_blank" className="text-rose-600 hover:text-rose-700 transition duration-300">
-      <FaTwitter size={36} className="text-blue-200 hover:text-blue-300" />
-    </a>
-    <a href="https://www.pinterest.com/floralelegance" target="_blank" className="text-rose-600 hover:text-rose-700 transition duration-300">
-      <FaPinterest size={36} className="text-red-500 hover:text-red-600" />
-    </a>
+    <div className="contact-info-image">
+      <Image
+        src="/c6.jpg"
+        alt="Flower Right"
+        height={220}
+        width={220}
+      />
+    </div>
   </div>
 </section>
 
 {/* Contact Form */}
-<section className="max-w-4xl mx-auto p-12 mt-4 text-center font-serif relative">
+<section className="contact-form-container">
   {/* Heading with Icon */}
-  <h3 className="text-3xl font-semibold text-gray-800 mb-4 flex items-center justify-center">
-    <FaEnvelope className="text-pink-600 mr-2" /> Contact Us
+  <h3 className="contact-form-title">
+    <FaEnvelope className="contact-form-icon" /> Contact Us
   </h3>
 
   {/* Small Paragraph */}
-  <p className="text-lg text-gray-600 mb-6 max-w-lg mx-auto">
+  <p className="contact-form-description">
     We’d love to hear from you! Whether you have a question, feedback, or just want to say hello, please feel free to reach out. Fill in the form below to send us a message, and we’ll respond as soon as possible.
   </p>
 
   {/* Contact Form */}
-  <form onSubmit={handleSubmit} className="space-y-6">
+  <form onSubmit={handleSubmit} className="contact-form">
     {/* Name Field */}
-    <div>
+    <div className="contact-form-field">
       <input
         type="text"
         name="name"
         value={formData.name}
         onChange={handleInputChange}
         placeholder="Your Name"
-        className="w-full p-4 border text-black border-gray-300 rounded-md text-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+        className="contact-form-input"
       />
-      {formErrors.name && <p className="text-red-500 text-sm">{formErrors.name}</p>}
+      {formErrors.name && <p className="contact-form-error">{formErrors.name}</p>}
     </div>
 
     {/* Email Field */}
-    <div>
+    <div className="contact-form-field">
       <input
         type="email"
         name="email"
         value={formData.email}
         onChange={handleInputChange}
         placeholder="Your Email"
-        className="w-full p-4 border text-black border-gray-300 rounded-md text-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
+        className="contact-form-input"
       />
-      {formErrors.email && <p className="text-red-500 text-sm">{formErrors.email}</p>}
+      {formErrors.email && <p className="contact-form-error">{formErrors.email}</p>}
     </div>
 
     {/* Subject Field */}
-    <div>
+    <div className="contact-form-field">
       <input
         type="text"
         name="subject"
         value={formData.subject}
         onChange={handleInputChange}
         placeholder="Subject"
-        className="w-full p-4 border text-black border-gray-300 rounded-md text-lg focus:outline-none focus:ring-2 focus:ring-pink-600"
+        className="contact-form-input"
       />
     </div>
 
     {/* Message Field */}
-    <div>
+    <div className="contact-form-field">
       <textarea
         name="message"
         value={formData.message}
         onChange={handleInputChange}
         placeholder="Your Message"
-        className="w-full p-4 border text-black border-gray-300 rounded-md text-lg focus:outline-none focus:ring-2 focus:ring-pink-600 h-40"
+        className="contact-form-textarea"
       ></textarea>
-      {formErrors.message && <p className="text-red-500 text-sm">{formErrors.message}</p>}
+      {formErrors.message && <p className="contact-form-error">{formErrors.message}</p>}
     </div>
 
     {/* Submit Button */}
     <button
       type="submit"
-      className={`w-full py-4 px-6 ${isLoading ? 'bg-gray-400' : 'bg-pink-600'} text-white text-lg rounded-md hover:bg-pink-700 transition duration-300`}
+      className={`contact-form-submit ${isLoading ? 'disabled' : ''}`}
       disabled={isLoading}
     >
       {isLoading ? (
@@ -287,12 +288,13 @@ const ContactPage = () => {
 
   {/* Success/Failure Message */}
   {formSubmitted && !isLoading && (
-    <p className="text-lg text-pink-600 mt-6">Thank you for your message! We will get back to you shortly.</p>
+    <p className="contact-form-success">Thank you for your message! We will get back to you shortly.</p>
   )}
 </section>
 
 
-    </div>
+  </div>
+  
   );
 };
 
