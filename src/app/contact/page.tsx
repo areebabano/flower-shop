@@ -123,7 +123,7 @@ const ContactPage = () => {
   <div className="contact-info-content">
     <div className="contact-info-image">
       <Image
-        src="/C1.jpg"
+        src="/f1R.jpg"
         alt="Flower Left"
         height={220}
         width={220}
@@ -153,7 +153,7 @@ const ContactPage = () => {
 
     <div className="contact-info-image">
       <Image
-        src="/C1.jpg"
+        src="/f1R.jpg"
         alt="Flower Right"
         height={220}
         width={220}
