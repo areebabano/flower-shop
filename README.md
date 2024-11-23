@@ -1,2 +1,2 @@
 # flower-shop
-flower shop in next.js tailwindcss
+flower shop in next.js with custom css.
